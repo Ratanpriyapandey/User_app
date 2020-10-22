@@ -4,7 +4,6 @@
   <button class = "btn_ref" type="button" (click)="getallAfterRefresh()" name="button"><i class="fa fa-refresh"></i></button>
 </div>
 <div>
-  <input class="form-control" type="text" [(ngModel)]="searchText" placeholder="Search">
 <table class="table table-striped" style="width: 80%;margin-left: 100px;" *ngIf="(userDetail | filter: searchText).length > 0; else noResults">
   <thead>
     <tr>
